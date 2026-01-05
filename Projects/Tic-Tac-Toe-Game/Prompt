@@ -3,3 +3,5 @@ description : A simple two-player board game where players take turns to mark X 
 languages : HTML, CSS, JavaScript
 working : Players click boxes one by one, the game checks win or draw and shows the result.
 design : Simple layout, clean colors, responsive grid
+players : Play with a friend or play against a bot
+levels : Easy, Medium, Hard
