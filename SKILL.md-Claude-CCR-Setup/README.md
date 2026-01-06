@@ -199,13 +199,13 @@ Purpose: Write clean, beginner-friendly JavaScript logic
 ### Step 1: Create Skill-Creator Folder
 
 ```
-mkdir .claude/skills/skill-creator/
+mkdir .claude\skills\skill-creator\
 ```
 
 ### Step 2: Create SKILL.md Manually
 
 ```
-touch .claude/skills/ui-helper/SKILL.md
+touch .claude\skills\ui-helper\SKILL.md
 ```
 
 ### Step 3: Open SKILL.md
