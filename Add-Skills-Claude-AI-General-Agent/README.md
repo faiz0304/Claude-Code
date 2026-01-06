@@ -1,9 +1,17 @@
 # AI-Driven Project Development with Claude / CCR By Add SKILL.md
 
-This repository demonstrates how to build a **Smart To-Do List App** using **Claude Code or CCR (Claude Code Router)** with a structured, AI-driven workflow and SKILL.md.
+This repository demonstrates how to build a **Smart To-Do List App** using **Claude Code or CCR (Claude Code Router)** with a structured, AI-driven workflow and **SKILL.md**.
 
 The focus is on **clear guidance, repeatable steps, and clean AI usage**, not random prompting.
+---
+## Prerequisites
 
+Before starting, make sure you have:
+
+- Windows 10 / 11
+- Node.js (LTS version recommended)
+- Cluade / Claude-Code-Router (CCR)
+- Have Some Basic Knowledge About Computer Work
 ---
 
 ## Project Overview
@@ -148,6 +156,8 @@ Update CLAUDE.md with these goals:
 
 ## Part 4: Create AI Skills
 
+## Option 1: AI-Driven Skill Creation (Recommended)
+
 ### Step 1: Create Skill-Creator
 
 ```
@@ -184,8 +194,56 @@ Purpose: Write clean, beginner-friendly JavaScript logic
 ```
 
 ---
+## Option 2: Manual Skill Creation (No AI Assistance)
 
-## Part 5: Build the Application
+### Step 1: Create Skill-Creator Folder
+
+```
+mkdir .claude/skills/skill-creator/
+```
+
+### Step 2: Create SKILL.md Manually
+
+```
+touch .claude/skills/ui-helper/SKILL.md
+```
+
+### Step 3: Open SKILL.md
+
+### Add content:
+
+```
+# UI Helper Skill
+
+## Purpose
+Design clean, accessible UI components for the project.
+
+## Trigger Phrases
+- design ui
+- create layout
+- style components
+
+## Rules
+- Follow design system from CLAUDE.md
+- Use semantic HTML
+- Keep CSS beginner-friendly
+- Ensure accessibility
+
+```
+
+### Step 4: Save and Use
+
+Claude / CCR will now recognize this skill automatically.
+
+## Part 5: Verification
+
+- Open Cluade / CCR
+- Ask Question:
+```
+How Many Skills Do You Have? Can you show me the list of skills have you?
+```
+
+## Part 6: Build the Application
 
 ### Step 1: HTML Structure
 
