@@ -205,6 +205,7 @@ mkdir .claude\skills\skill-creator\
 ### Step 2: Create SKILL.md Manually
 
 ```
+mkdir .claude\skills\ui-helper\
 touch .claude\skills\ui-helper\SKILL.md
 ```
 
