@@ -15,7 +15,9 @@ Before starting, ensure the following are installed:
 - **Node.js (LTS recommended)**
   ```bash
   node --version
+  #OR
   node -v
+  #OR
   npm -v
   ```
 - **Windows PowerShell**
@@ -39,6 +41,8 @@ qwen
 ## 2️⃣ Authenticate Qwen & Get Access Token
 
 ```bash
+/auth
+#OR
 qwen /auth
 ```
 
@@ -138,16 +142,6 @@ ccr code
 Test:
 ```
 hi
-```
-
----
-
-## 🔒 Security
-
-Add to `.gitignore`:
-```gitignore
-.claude-code-router/config.json
-.qwen/oauth_creds
 ```
 
 ---
