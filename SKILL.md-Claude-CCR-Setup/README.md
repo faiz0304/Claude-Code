@@ -2,7 +2,10 @@
 
 This repository demonstrates how to build a **Smart To-Do List App** using **Claude Code or CCR (Claude Code Router)** with a structured, AI-driven workflow and **SKILL.md**.
 
+Youtube Video Guide Link: https://youtu.be/bSpGbv8AV0Q
+
 The focus is on **clear guidance, repeatable steps, and clean AI usage**, not random prompting.
+
 ---
 ## Prerequisites
 
