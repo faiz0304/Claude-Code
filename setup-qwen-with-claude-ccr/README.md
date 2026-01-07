@@ -4,6 +4,8 @@ This repository provides a **step-by-step guide** to configure **Qwen (via Qwen 
 
 The guide is written for **Windows (PowerShell)** users and assumes basic familiarity with Node.js and CLI tools.
 
+YouTube Video Guide Link: https://youtu.be/i9nmSibzjiE
+
 ---
 
 ## 📌 Prerequisites
