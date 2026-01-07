@@ -3,6 +3,8 @@
 This guide explains how to install, verify, and configure **Claude Code** and **Claude Code Router (CCR)** step by step.
 It is beginner-friendly.
 
+Youtbe Video Guide Link: https://youtu.be/s-MgzbU1ci8
+
 ---
 
 ## 1. Prerequisites
