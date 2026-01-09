@@ -1,0 +1,198 @@
+# **Project Plan: Crypto Agent using Knowledge Base + FreeCryptoAPI**
+
+---
+
+## **1. Project Title**
+
+**Build a Crypto Agent using Knowledge Base + FreeCryptoAPI**
+
+---
+
+## **2. Objective / Goal**
+
+* Develop an AI agent that **answers crypto-related queries without hallucinating**.
+* The agent **must not provide answers directly from the LLM**.
+* Responses are allowed only if:
+
+  1. Data exists in the Knowledge Base (KB).
+  2. Data is fetched via FreeCryptoAPI / CoinGecko API.
+  3. Data can be derived from KB + API result.
+* Queries outside KB/API must be **explicitly rejected**.
+
+---
+
+## **3. Project Description**
+
+The Crypto Agent integrates a **Knowledge Base**, **live API data**, and **short-term conversation memory** to provide accurate crypto information.
+
+**Key Features:**
+
+1. **Knowledge Base (Primary Source):**
+
+   * Stores **crypto metadata** (symbol, launch year, consensus, chain type) and **cached API responses** (price, market cap, timestamp).
+   * Recommended format: **JSON**.
+
+2. **Live Tool / API (Secondary Source):**
+
+   * Fetches live prices or market cap from **FreeCryptoAPI / CoinGecko** only if KB data is missing or stale.
+
+3. **Memory:**
+
+   * **Short-term memory:** Tracks last 8–10 conversation turns for context.
+   * **Long-term memory:** Stores facts and cached API data.
+
+4. **Hallucination Prevention & Rules:**
+
+   * KB-First Policy: Always check KB before API.
+   * Explicit rejection if data not found:
+
+     ```
+     INSUFFICIENT DATA – Not found in Knowledge Base or API
+     ```
+   * Response includes **Source** and **Confidence Score (0–1)**.
+   * Allowed queries: price, market cap, metadata, follow-ups.
+   * Disallowed queries: price prediction, investment advice, hypothetical questions, unknown queries.
+
+---
+
+## **4. Tools & Technologies**
+
+| Tool / Technology             | Purpose                                                    |
+| ----------------------------- | ---------------------------------------------------------- |
+| Python                        | Main programming language                                  |
+| JSON / SQLite                 | Knowledge Base storage                                     |
+| FreeCryptoAPI / CoinGecko API | Fetch live crypto data                                     |
+| crypto_tools.py               | Python functions like `get_crypto_price(coin_name)`        |
+| LangChain / Groq              | Connect KB + API as callable agent tool (optional for MVP) |
+| Short-term memory             | Store conversation history                                 |
+| Long-term memory              | Store KB and cached API responses                          |
+| Response formatter            | Add Source & Confidence to every answer                    |
+
+---
+
+## **5. Workflow / System Design**
+
+```
+User Query
+     │
+     ▼
+[Entity & Intent Detection]
+     │
+     ▼
+[Search Knowledge Base]
+     │
+     ├─> Data found & fresh? ── Yes ──► [Return Response from KB]
+     │                                  │
+     │                                  ▼
+     │                          Source: Knowledge Base
+     │                          Confidence Score: 0.8–1.0
+     │
+     └─> No ──► [Call FreeCryptoAPI]
+                   │
+                   ▼
+           API Response Available?
+                   │
+           ├─> Yes ──► [Update KB with new data] ──► [Return Response from API]
+           │                 │
+           │                 ▼
+           │           Source: FreeCryptoAPI
+           │           Confidence Score: 0.8–1.0
+           │
+           └─> No ──► [Reject Query]
+                          │
+                          ▼
+       "INSUFFICIENT DATA – Not found in Knowledge Base or API"
+```
+
+---
+
+## **6. Project Implementation Steps**
+
+**Step 1: Project Setup (MVP)**
+
+* Create `crypto_tools.py`.
+* Write function:
+
+  ```python
+  def get_crypto_price(coin_name):
+      # fetch price from FreeCryptoAPI or CoinGecko
+      pass
+  ```
+* Test manually:
+
+  ```python
+  print(get_crypto_price("bitcoin"))
+  ```
+
+**Step 2: Build Knowledge Base**
+
+* Create JSON file containing:
+
+  ```json
+  {
+      "coin": "Bitcoin",
+      "symbol": "BTC",
+      "launch_year": 2009,
+      "consensus": "Proof of Work",
+      "last_price": 43210.55,
+      "price_timestamp": "2026-01-06T10:15:00Z"
+  }
+  ```
+* Add similar entries for other coins.
+
+**Step 3: Implement KB-first Logic**
+
+* Detect entity & intent.
+* Search KB.
+* Check freshness (e.g., 10–15 min limit).
+* If data stale or missing → call API → update KB.
+* Format response with **Source** and **Confidence Score**.
+* Reject queries if data unavailable.
+
+**Step 4: Implement Memory**
+
+* Short-term memory: last 8–10 conversation turns for follow-up questions.
+* Long-term memory: persistent KB + cached API responses.
+
+**Step 5: Integrate API Tools**
+
+* Connect `crypto_tools.py` functions to the agent using LangChain / Groq.
+* Ensure API is called **only when necessary**.
+
+**Step 6: Test Agent**
+
+* Test queries for:
+
+  * Metadata retrieval
+  * Price / market cap
+  * Context-aware follow-ups
+  * Disallowed queries → explicit rejection
+* Check response formatting: Source + Confidence Score.
+
+---
+
+## **7. Expected Deliverables**
+
+* `crypto_tools.py` (API functions)
+* Knowledge Base JSON / SQLite file
+* Python code implementing agent logic (KB-first + API fallback + memory)
+* Workflow diagram (optional for report)
+* Test cases showing allowed/disallowed queries
+* Final working agent that can:
+
+  * Answer queries from KB
+  * Fetch live data if needed
+  * Reject invalid queries
+  * Maintain conversation context
+
+---
+
+## **8. Success Criteria**
+
+* Agent **never hallucinates**.
+* Responses are **structured and predictable**.
+* Short-term memory supports follow-ups.
+* All queries include **source** and **confidence score**.
+* Agent correctly rejects **disallowed queries**.
+
+---
