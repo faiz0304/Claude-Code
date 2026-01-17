@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Smart To-Do List</h1>
+            <p>Organize your tasks efficiently</p>
+            <button id="dark-mode-toggle" class="theme-toggle">🌙 Dark Mode</button>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="task-list" class="task-list"></ul>
+
+        <div class="task-stats">
+            <span id="task-count">0 tasks remaining</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
