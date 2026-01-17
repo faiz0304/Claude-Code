@@ -65,9 +65,18 @@ Everything is explained step by step, including **which file/folder to open, wha
 
 Before adding anything, always check how many MCP servers are already installed.
 
-Run:
+Option A: Run on terminal:
 ```
 claude mcp list
+```
+
+Option B: Run on Claude CLI:
+```
+claude mcp list
+```
+OR
+```
+/mcp
 ```
 
 Possible results:
@@ -83,6 +92,12 @@ This step helps you avoid duplicate installations.
 Now add beginner-friendly MCP servers. These commands are **copied from this file** and pasted **directly into Claude CLI**.
 
 #### 2.1 Add Playwright MCP (for web browsing)
+
+Option A: Run on Terminal:
+```
+npm install @playwright/mcp
+```
+Option B: from Claude CLI (Recommended)
 ```
 claude mcp add --transport stdio playwright npx @playwright/mcp@latest
 ```
@@ -91,6 +106,13 @@ claude mcp add --transport stdio playwright npx @playwright/mcp@latest
   - Only through **approved Playwright MCP server**
 
 #### 2.2 Add Context7 MCP (for latest documentation)
+
+Option A: Run on Terminal:
+```
+npm install @upstash/context-mcp
+```
+
+Option B: from Claude CLI (Recommended)
 ```
 claude mcp add --transport stdio context7 npx @upstash/context7-mcp
 ```
@@ -105,9 +127,22 @@ claude mcp add --transport stdio context7 npx @upstash/context7-mcp
 
 After installation, check everything is correctly installed.
 
-- Run in **Claude CLI**:
+####Option A from Terminal:
+Option 1:
+```
+claude mcp list
+```
+Option 2:
+Playwright:
+```
+npx @playwright/mcp@latest --version
+```
+Context7:
+```
+npx @upstash/context7-mcp --version
+```
 
-Run:
+####Option B: Run in **Claude CLI**:
 ```
 claude mcp list
 ```
