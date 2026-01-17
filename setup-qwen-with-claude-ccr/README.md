@@ -12,6 +12,7 @@ Before starting, ensure the following are installed:
 
 - **Node.js (LTS recommended)**
   ```bash
+  node --version
   node -v
   npm -v
   ```
