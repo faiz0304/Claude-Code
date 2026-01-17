@@ -1,8 +1,20 @@
 # AI-Driven Project Development with Claude / CCR
 
-This repository demonstrates how to build a **Smart To-Do List App** using **Claude Code or CCR (Claude Code Router)** with a structured, AI-driven workflow.
+This repository demonstrates how to build a **Smart To-Do List App** using **Claude Code or CCR (Claude Code Router)** with a structured, AI-driven workflow and **SKILL.md**.
 
 The focus is on **clear guidance, repeatable steps, and clean AI usage**, not random prompting.
+
+---
+
+---
+## Prerequisities
+
+Before starting, make sure you have
+- Windows 10/11
+- Node.js(LTS version recommended)
+- Claude/Claude-Code-Router(CCR)
+- Have Some Basic Knowledge About Computer
+---
 
 ---
 
