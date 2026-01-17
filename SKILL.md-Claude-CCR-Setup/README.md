@@ -5,8 +5,6 @@ This repository demonstrates how to build a **Smart To-Do List App** using **Cla
 The focus is on **clear guidance, repeatable steps, and clean AI usage**, not random prompting.
 
 ---
-
----
 ## Prerequisities
 
 Before starting, make sure you have
@@ -14,8 +12,7 @@ Before starting, make sure you have
 - Node.js(LTS version recommended)
 - Claude/Claude-Code-Router(CCR)
 - Have Some Basic Knowledge About Computer
----
-
+  
 ---
 
 ## Project Overview
