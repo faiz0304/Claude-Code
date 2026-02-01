@@ -1,223 +1,100 @@
-# Plugins in Claude Code — Practical Guide
+# Plugins in Claude Code — Practical Video Guide
 
+Youtube-Video-Link:
 [Plugins in Claude Code — Practical Guide](https://www.youtube.com/@faizcodesai)
 
-Plugins are installable bundles that add multiple Claude capabilities at once.
+---
 
-A single plugin can include:
+## Theory (Quick Overview)
 
-- skills
-- commands
-- subagents
-- hooks
-- MCP integrations
+Plugins are bundles that add multiple Claude Code capabilities at once:
 
-One install = many features activated.
+- Skills  
+- Commands  
+- Subagents  
+- Hooks  
+- MCP integrations  
+
+One install activates multiple features.  
+Check marketplaces first before building custom workflows.
 
 ---
 
-## Mental Model
+## Practical Walkthrough
 
-Claude Code core = engine  
-Plugin = extension module  
-Marketplace = distribution layer
-
-You don’t build everything manually.  
-You load capabilities.
-
----
-
-## Why Plugins Exist
-
-Manual setup requires:
-
-- configuring MCP servers
-- wiring skills
-- adding automation
-- testing compatibility
-
-Plugins compress all of this into one step:
-
-```cmd
-/plugin install github@claude-plugins-official
-```
-
-Rule: **search marketplace before building custom.**
-
----
-
-## Open Plugin Manager
+### Step 1 — Open Plugin Manager
 
 Run:
 
-```claude-code-cli
+```claude-code-cli-command
 /plugin
 ```
 
 
-This opens the Plugin Manager.
+You see **three tabs**:
 
-Tabs:
-
-- Discover → browse plugins
-- Installed → manage plugins
-- Marketplaces → plugin sources
-- Errors → debugging
-
-This is your control panel.
+1. **Discover** → Browse and search plugins  
+2. **Installed** → Manage installed plugins  
+3. **Marketplace** → Manage plugin sources  
 
 ---
 
-## Install a Plugin (Two Methods)
+### Step 2 — Discover Tab
 
-Example plugin: commit automation
-
-### Method 1 — Install with UI
-
-1. Run `/plugin`
-2. Open **Discover** tab
-3. Find `commit-commands`
-4. Press **Enter**
-5. Select install scope → choose **User**
-
-The plugin installs immediately.
-
-### Method 2 — Install with command
-
-```cmd
-/plugin install commit-commands@claude-plugins-official
-```
-
-
-Same result. Faster for advanced users.
+- Search bar at the top → type any plugin name  
+- **4 shortcuts**:  
+  - `Type` → search  
+  - `Space` → toggle selection  
+  - `Enter` → view details  
+  - `Esc` → back  
 
 ---
 
-## Use the Plugin Immediately
+### Step 3 — Installed Tab
 
-After installation:
-
-```claude-code-cli
-/commit-commands:commit
-```
-
-
-Result:
-
-1. stages files
-2. generates commit message
-3. creates commit
-
-No manual git typing.
-
-Plugins are workflow accelerators.
+- Navigate with **left arrow** from Discover  
+- Shows installed plugins and MCP servers  
+- If empty → no plugins installed  
+- `Esc` → back  
 
 ---
 
-## Code Intelligence Plugins
+### Step 4 — Marketplace Tab
 
-These add IDE-style features:
-
-- jump to definitions
-- reference search
-- type errors
-
-Install example:
-
-```cmd
-/plugin install github@claude-plugins-official
-/plugin install slack@claude-plugins-official
-```
-
-
-Claude can now operate inside those platforms.
+- Navigate → manage marketplaces  
+- Shows current sources (e.g., `claude-plugins-official`)  
+- **Options**:  
+  - `Enter` → select  
+  - `U` → update  
+  - `R` → remove  
+  - `Esc` → back  
 
 ---
 
-## Installation Scope
+### Step 5 — Install a Plugin
 
-Each plugin has scope:
+- Go back to **Discover**  
+- Example: `frontend-design` plugin  
+- Install it → plugin appears in Installed tab  
 
-User → all your projects  
-Project → shared with repo  
-Local → only this repository
-
-Recommendation:
-
-- personal tools → User
-- team standards → Project
+Check Installed folder → now contains plugin files (was empty before)
 
 ---
 
-## Managing Plugins
+### Step 6 — Use the Plugin in a Project
 
-Disable:
-```cmd
-/plugin disable plugin@marketplace
-```
-
-Enable:
-```cmd
-/plugin disable plugin@marketplace
-```
-
-Remove:
-```cmd
-/plugin uninstall plugin@marketplace
-```
-
-View installed plugins in:
-```claude-code-cli
-/plugin → Installed
-```
-
+- Create a new project  
+- Give prompt: "Make a portfolio page using HTML, CSS, JavaScript"  
+- Plugin generates the project structure and code automatically  
 
 ---
 
-## Add Custom Marketplaces
+## Conclusion
 
-Add plugin sources:
-```cmd
-/plugin marketplace add owner/repo
-```
-
-
-Local development:
-```cmd
-/plugin marketplace add ./my-marketplace
-```
-
-This supports private ecosystems.
-
----
-
-## Decision Framework
-
-Install plugin when:
-
-- task is common
-- integration already exists
-- workflow is repeatable
-
-Build custom when:
-
-- no plugin matches
-- workflow is unique
-- advanced automation needed
-
-Reuse first. Build second.
-
----
-
-## 5 Rules to Remember
-
-1. Plugins bundle multiple systems
-2. Marketplace before custom build
-3. Install → test immediately
-4. Scope matters
-5. Plugins automate real workflows
-
----
+- Plugins save setup time by bundling skills, hooks, commands, and integrations  
+- Always check **Discover** first  
+- Installed plugins appear in **Installed** tab  
+- Marketplaces can be added or managed via **Marketplace** tab  
+- Use plugins for practical workflows instead of building from scratch  
 
 End.
-
