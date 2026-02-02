@@ -1,5 +1,7 @@
 # Qwen + Claude Code Router Setup Guide
 
+📺 Watch this video : [**Setup CCR with Qwen (Free Model)**](https://youtu.be/i9nmSibzjiE?si=Xq7oDQWCKZxbSJhE)
+
 This repository provides a **step-by-step guide** to configure **Qwen (via Qwen Code CLI)** with **Claude Code Router (CCR)** so you can use Qwen models inside Claude Code workflows.
 
 The guide is written for **Windows (PowerShell)** users and assumes basic familiarity with Node.js and CLI tools.
