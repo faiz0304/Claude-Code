@@ -1,5 +1,7 @@
 # AI-Driven Project Development with Claude / CCR
 
+📺 Watch this video : [How to Add Skills (SKILL.md) in Claude Code AI Agent](https://youtu.be/bSpGbv8AV0Q?si=L1_JhEsQqkcSfYO8)
+
 This repository demonstrates how to build a **Smart To-Do List App** using **Claude Code or CCR (Claude Code Router)** with a structured, AI-driven workflow and **SKILL.md**.
 
 The focus is on **clear guidance, repeatable steps, and clean AI usage**, not random prompting.
