@@ -18,8 +18,7 @@ Before using **Claude Code CLI**, you must have **one of the following setups**:
 If you want to use Claude with an official Anthropic subscription.
 
 📺 Watch this video first:  
-👉 **How to Install Claude Code CLI (Official Way)**  
-🔗 *[(https://youtu.be/s-MgzbU1ci8?si=ZTvpOqVC47QtUA_r)]*
+👉 [**How to Install Claude Code CLI (Official Way)**](https://youtu.be/s-MgzbU1ci8?si=ZTvpOqVC47QtUA_r)
 
 ---
 
@@ -27,11 +26,9 @@ If you want to use Claude with an official Anthropic subscription.
 If you want to use Claude Code CLI **for free** using **CCR with Qwen**.
 
 📺 Watch these videos first:
-1. **Install CCR (Claude Code Router)**  
-   🔗 *[(https://youtu.be/i9nmSibzjiE?si=f0ejhWeGACfWc0F3)]*
+1. [**Install CCR (Claude Code Router)**](https://youtu.be/i9nmSibzjiE?si=f0ejhWeGACfWc0F3)
 
-2. **Setup CCR with Qwen (Free Model)**  
-   🔗 *[Paste your Qwen setup video link here]*
+2. [**Setup CCR with Qwen (Free Model)**](https://youtu.be/i9nmSibzjiE?si=Xq7oDQWCKZxbSJhE)
 
 🚫 **Do NOT continue with this README** unless one of the above setups is complete.
 
