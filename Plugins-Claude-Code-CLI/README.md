@@ -1,7 +1,7 @@
 # Plugins in Claude Code — Practical Video Guide
 
 Youtube-Video-Link:
-[Plugins in Claude Code — Practical Guide](https://www.youtube.com/@faizcodesai)
+[Plugins in Claude Code — Practical Guide](https://youtu.be/PPnVh4GSo8M?si=hK91wPBNkTIO9bLU)
 
 ---
 
