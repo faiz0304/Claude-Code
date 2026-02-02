@@ -1,5 +1,7 @@
 # MCP Integration – Beginner Friendly Guide
 
+Youtube-Video-Link: [MCP Integration in Claude Code — Practical Guide](https://youtu.be/CBA2a3PkYng?si=mnlVDQRdjaM4Jxt8)
+
 ## What is MCP?
 MCP (Model Context Protocol) allows Claude Code to safely connect with external tools like websites, documentation, APIs, and databases.
 
