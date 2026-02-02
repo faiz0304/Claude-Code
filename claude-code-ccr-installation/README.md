@@ -1,5 +1,7 @@
 # Claude Code + Claude Code Router (CCR) Setup Guide (Windows)
 
+📺 Watch this video : [**Install CCR (Claude Code Router)**](https://youtu.be/i9nmSibzjiE?si=f0ejhWeGACfWc0F3)
+
 This guide explains how to install, verify, and configure **Claude Code** and **Claude Code Router (CCR)** step by step.
 It is beginner-friendly and suitable for teaching via YouTube.
 
