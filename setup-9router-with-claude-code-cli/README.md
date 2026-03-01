@@ -79,8 +79,13 @@ AI Providers (Auto Switch)
 
 ### Step 1 --- Install Globally
 
-npm install -g 9router\
+```powershell
+npm install -g 9router
+```
+
+```powershell
 9router
+```
 
 Dashboard opens at: http://localhost:20128
 
@@ -90,7 +95,7 @@ Dashboard opens at: http://localhost:20128
 
 Dashboard → Providers
 
-Connect any available provider: - Claude Code - Gemini CLI - Free
+Connect any available provider: - Claude Code - Gemini CLI - Qwen - Free
 Providers
 
 Login using OAuth and finish setup.
