@@ -1,4 +1,4 @@
-# 🚀 9Router Setup Guide (Beginner Friendly)
+# 🚀 9Router Setup Guide with CLAUDE CODE CLI (Beginner Friendly)
 
 Free AI Routing System --- Complete Practical Setup
 
